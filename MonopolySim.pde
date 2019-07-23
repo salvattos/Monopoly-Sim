@@ -32,7 +32,7 @@ void draw() {
     hits = dice.capRevolutions_Rolls(1, numRolls);
 
     for (int i = 0; i < redVals.length; i++) {
-      redVals[i] = dice.map(hits[i], min(hits), max(hits), 0, 225);
+      redVals[i] = dice.mapColors(hits[i], min(hits), max(hits), 0, 225);
       percents[i] = 100*float(hits[i])/numRolls;
     }
     
